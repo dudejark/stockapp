@@ -1,0 +1,93 @@
+# Core FastAPI and web server dependencies
+fastapi==0.104.1                # Modern, fast web framework for building APIs
+uvicorn[standard]==0.24.0        # ASGI server for running FastAPI applications
+gunicorn==21.2.0                 # WSGI server for production deployment
+
+# Data processing and manipulation
+pandas==2.1.3                   # Data manipulation and analysis library
+numpy==1.25.2                   # Fundamental package for scientific computing
+
+# Machine Learning and Neural Networks
+torch==2.1.1                    # PyTorch deep learning framework
+torchvision==0.16.1             # Computer vision library for PyTorch
+torchaudio==2.1.1               # Audio processing library for PyTorch
+scikit-learn==1.3.2             # Machine learning library for preprocessing
+
+# Stock data and financial APIs
+yfinance==0.2.28                # Yahoo Finance API for stock data
+requests==2.31.0                # HTTP library for API requests
+
+# Natural Language Processing
+textblob==0.17.1                # Simple NLP library for sentiment analysis
+
+# Data visualization (optional, for future enhancements)
+matplotlib==3.8.2               # Plotting library
+seaborn==0.13.0                 # Statistical data visualization
+plotly==5.17.0                  # Interactive plotting library
+
+# Development and testing dependencies
+pytest==7.4.3                   # Testing framework
+pytest-asyncio==0.21.1          # Async testing support
+httpx==0.25.2                   # Async HTTP client for testing FastAPI
+
+# Code quality and formatting
+black==23.11.0                  # Code formatter
+flake8==6.1.0                   # Linting tool
+mypy==1.7.1                     # Static type checker
+
+# Environment and configuration
+python-dotenv==1.0.0            # Load environment variables from .env file
+pydantic==2.5.0                 # Data validation using Python type annotations
+
+# Additional utilities
+python-multipart==0.0.6         # Support for form data parsing
+jinja2==3.1.2                   # Template engine for HTML responses
+aiofiles==23.2.1                # Async file operations
+
+# Logging and monitoring
+structlog==23.2.0               # Structured logging
+rich==13.7.0                    # Rich text and beautiful formatting
+
+# Security (for production)
+python-jose[cryptography]==3.3.0  # JWT token handling
+passlib[bcrypt]==1.7.4           # Password hashing
+python-multipart==0.0.6          # Form parsing support
+
+# Optional: Database support (for future enhancements)
+sqlalchemy==2.0.23              # SQL toolkit and ORM
+databases[postgresql]==0.8.0     # Async database support
+alembic==1.12.1                 # Database migration tool
+
+# Optional: Caching (for performance optimization)
+redis==5.0.1                    # Redis client for caching
+aioredis==2.0.1                 # Async Redis client
+
+# Optional: Job queue (for background tasks)
+celery==5.3.4                   # Distributed task queue
+kombu==5.3.4                    # Messaging library for Celery
+
+# Documentation generation
+mkdocs==1.5.3                   # Documentation generator
+mkdocs-material==9.4.8          # Material theme for MkDocs
+
+# API documentation and validation
+pydantic-settings==2.1.0        # Settings management with Pydantic
+email-validator==2.1.0          # Email validation support
+
+# Performance monitoring (optional)
+prometheus-client==0.19.0       # Prometheus metrics client
+psutil==5.9.6                   # System and process utilities
+
+# Development server enhancements
+watchfiles==0.21.0              # File watching for auto-reload
+python-dotenv==1.0.0            # Environment variable management
+
+# Additional data science libraries (for advanced features)
+scipy==1.11.4                   # Scientific computing library
+statsmodels==0.14.0             # Statistical modeling
+ta-lib==0.4.28                  # Technical analysis library (requires separate installation)
+
+# Note: Some packages might have version conflicts. 
+# Use the following commands to resolve:
+# pip install --upgrade pip
+# pip install -r requirements.txt --upgrade
